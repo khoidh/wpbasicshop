@@ -432,3 +432,7 @@ function twentysixteen_widget_tag_cloud_args( $args ) {
 	return $args;
 }
 add_filter( 'widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args' );
+
+@ini_set('upload_max_filesize','65M');
+@ini_set('post_max_size','65M');
+@ini_set('max_execution_time','120');
